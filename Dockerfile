@@ -14,4 +14,4 @@ COPY . /usr/src/app
 #container exposed network port number
 EXPOSE 8080
 #command to run within the container
-CMD [ 'node', 'server.js' ]
+CMD  [ 'node','server.js' ]
