@@ -8,10 +8,8 @@ exports.create = (req, res) => {
     res.status(400).send({ message: "Content can not be empty!" });
     return;
   }
-
   // Create a Note
   const note = new Note({
-    id: req.body.id,
     title: req.body.title,
     content: req.body.content,
     status: req.body.status
